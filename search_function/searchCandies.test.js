@@ -1,5 +1,6 @@
 const searchCandies = require('./searchCandies');
 
+
 const candies = [
     { name: 'Aero', price: 1.99 },
     { name: 'Skitties', price: 2.99 },
