@@ -11,6 +11,7 @@ class Candy {
     }
 }
 
+
 class ShoppingBasket {
     constructor() {
         this.itemes = [];
