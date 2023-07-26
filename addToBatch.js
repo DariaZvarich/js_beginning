@@ -12,3 +12,15 @@ const addToBatch2 = (arr, number) => {
     console.log(addToBatch([], 8)); // Output: [8]
     console.log(addToBatch([1, 2, 3, 4, 5, 6], 7)); // Output: [1, 2, 3, 4, 5, 6]
     console.log(addToBatch([1, 2, 3, 4, 5, 6, 7, 8, 9], 10)); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+const cohort = {
+        name: 'May2022',
+        id: 1234,
+        address: {
+          city: 'London',
+          postcode: 'E1 123'
+        },
+        hobbies: ['writing', 'tennis', 'cooking']
+      };
+      
