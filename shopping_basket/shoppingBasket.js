@@ -1,6 +1,11 @@
 class ShoppingBasket {
     constructor() {
         this.items = [];
+        this.discount = 0;
+    }
+
+    applyDiscount(discount) {
+        this.discount = discount;
     }
 
     addItem(candy) {
@@ -8,7 +13,12 @@ class ShoppingBasket {
     }
 
     getTotalPrice() {
-        return this.items.reduce((total, candy) => total + candy.getPrice(), 0);
+        let totalPrice = 0;
+        this.items.forEach((candy) => {
+            totalPrice += candy.getPrice();
+        });
+
+        return totalPrice - this.discount;
     }
 }
 
