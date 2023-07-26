@@ -1,5 +1,5 @@
 const Candy = require('./candy');
-const ShoppingBasket = require('../shopping_basket/shoppingBasket');
+const ShoppingBasket = require('./shoppingBasket');
 
 describe('Candy', () => {
     it('should return the correct name and price', () => {
@@ -16,12 +16,11 @@ describe('ShoppingBasket', () => {
     });
 
     it('should return the correct price after adding items to the basket', () => {
-        // Mock Candy objects using JS object as doubles
         const candy1 = { getName: () => 'Mars', getPrice: () => 4.99 };
         const candy2 = { getName: () => 'Skittle', getPrice: () => 3.99 };
-    
+
         const basket = new ShoppingBasket();
-        
+
         basket.addItem(candy1);
         expect(basket.getTotalPrice()).toEqual(4.99);
 
@@ -30,7 +29,5 @@ describe('ShoppingBasket', () => {
 
         basket.addItem(candy2);
         expect(basket.getTotalPrice()).toEqual(12.97);
-
     });
-
 });
